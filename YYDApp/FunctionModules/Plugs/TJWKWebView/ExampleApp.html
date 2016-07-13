@@ -1,0 +1,24 @@
+<!doctype html>
+<html><head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <style type='text/css'>
+            
+            </style>
+</head><body>
+    <h1>WebViewJavascriptBridge Demo</h1>
+    <div style="text-align:center;">
+        <button id="button" style="width:200px;height:200px;background:red;"><button>
+            </div>
+    <script>
+        
+        var button = document.getElementById('button');
+        button.onclick = function(){
+           
+                   WebViewJavascriptBridge.callHandler('changeTitle', {'foo': 'bar'},function(responseData) {
+                                                                                                       alert(responseData);
+                                                       
+                                                       }                                          );
+        }
+    </script>
+    
+</body></html>
