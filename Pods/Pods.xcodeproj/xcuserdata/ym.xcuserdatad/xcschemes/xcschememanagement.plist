@@ -9,12 +9,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Aspects.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-YYDApp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,12 +47,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8C2E38BD27C00CD2670EB8E3C80AE33B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8DD7B778BB865DCC401743FF3FA28C0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F99FAFE0D3F25C3FB3DF069C1EF6BD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AED278FEE24A460BC7A0CCBCA09798CF</key>
+		<key>C237F1DCC3A05474E4D913147EC1B5E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBC9A0AF6D4571D059D2AF2422F2BD6E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

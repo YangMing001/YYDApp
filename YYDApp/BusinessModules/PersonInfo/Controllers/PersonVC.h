@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  PersonVC.h
 //  YYDApp
 //
-//  Created by YM on 16/7/13.
+//  Created by YM on 16/7/14.
 //  Copyright © 2016年 YM. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PersonVC : UIViewController
 
 @end
-

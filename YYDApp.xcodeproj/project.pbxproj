@@ -8,8 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		717A50FD6930EE8C5E24D37F /* libPods-YYDApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C6AA1D331AB385DA9D4ACD /* libPods-YYDApp.a */; };
+		993751381D372CF400B1182D /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751371D372CF400B1182D /* TabBarVC.m */; };
+		9937513B1D372D3A00B1182D /* TabBarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937513A1D372D3A00B1182D /* TabBarHelper.m */; };
+		993751441D37302100B1182D /* PersonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751431D37302100B1182D /* PersonVC.m */; };
+		993751481D3731C700B1182D /* TargetPersonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751471D3731C700B1182D /* TargetPersonInfo.m */; };
+		9937514C1D3732BC00B1182D /* YMMediator+PersonActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937514B1D3732BC00B1182D /* YMMediator+PersonActions.m */; };
+		9937514F1D3734BE00B1182D /* APPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937514E1D3734BE00B1182D /* APPNavigationController.m */; };
+		993751531D373A0E00B1182D /* UIColor+AppColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751521D373A0E00B1182D /* UIColor+AppColor.m */; };
+		993751561D373BB400B1182D /* PersonSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751551D373BB400B1182D /* PersonSettingVC.m */; };
+		993751591D37440E00B1182D /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751581D37440E00B1182D /* AboutVC.m */; };
+		9937515C1D37598200B1182D /* TabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937515B1D37598200B1182D /* TabBarView.m */; };
+		993751661D376FC800B1182D /* APPViewControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751651D376FC800B1182D /* APPViewControllerIntercepter.m */; };
+		9937516E1D37867B00B1182D /* PlugsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937516D1D37867B00B1182D /* PlugsManager.m */; };
+		993751711D37880800B1182D /* AppKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751701D37880800B1182D /* AppKeys.m */; };
+		993751751D378D3D00B1182D /* PushService.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751741D378D3D00B1182D /* PushService.m */; };
 		99F162381D363D8E00C8B579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F162371D363D8E00C8B579 /* main.m */; };
-		99F1623E1D363D8E00C8B579 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F1623D1D363D8E00C8B579 /* ViewController.m */; };
 		99F162431D363D8E00C8B579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F162421D363D8E00C8B579 /* Assets.xcassets */; };
 		99F162461D363D8E00C8B579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F162441D363D8E00C8B579 /* LaunchScreen.storyboard */; };
 		99F162511D363D8E00C8B579 /* YYDAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F162501D363D8E00C8B579 /* YYDAppTests.m */; };
@@ -63,10 +76,38 @@
 /* Begin PBXFileReference section */
 		57C6AA1D331AB385DA9D4ACD /* libPods-YYDApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YYDApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62117DFC572C9E729706A0B0 /* Pods-YYDApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYDApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYDApp/Pods-YYDApp.debug.xcconfig"; sourceTree = "<group>"; };
+		993751361D372CF400B1182D /* TabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVC.h; sourceTree = "<group>"; };
+		993751371D372CF400B1182D /* TabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
+		993751391D372D3A00B1182D /* TabBarHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarHelper.h; sourceTree = "<group>"; };
+		9937513A1D372D3A00B1182D /* TabBarHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarHelper.m; sourceTree = "<group>"; };
+		993751421D37302100B1182D /* PersonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonVC.h; sourceTree = "<group>"; };
+		993751431D37302100B1182D /* PersonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonVC.m; sourceTree = "<group>"; };
+		993751461D3731C700B1182D /* TargetPersonInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetPersonInfo.h; sourceTree = "<group>"; };
+		993751471D3731C700B1182D /* TargetPersonInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetPersonInfo.m; sourceTree = "<group>"; };
+		9937514A1D3732BC00B1182D /* YMMediator+PersonActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YMMediator+PersonActions.h"; sourceTree = "<group>"; };
+		9937514B1D3732BC00B1182D /* YMMediator+PersonActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YMMediator+PersonActions.m"; sourceTree = "<group>"; };
+		9937514D1D3734BE00B1182D /* APPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPNavigationController.h; sourceTree = "<group>"; };
+		9937514E1D3734BE00B1182D /* APPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPNavigationController.m; sourceTree = "<group>"; };
+		993751511D373A0E00B1182D /* UIColor+AppColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AppColor.h"; sourceTree = "<group>"; };
+		993751521D373A0E00B1182D /* UIColor+AppColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AppColor.m"; sourceTree = "<group>"; };
+		993751541D373BB400B1182D /* PersonSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonSettingVC.h; sourceTree = "<group>"; };
+		993751551D373BB400B1182D /* PersonSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonSettingVC.m; sourceTree = "<group>"; };
+		993751571D37440E00B1182D /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
+		993751581D37440E00B1182D /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
+		9937515A1D37598200B1182D /* TabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarView.h; sourceTree = "<group>"; };
+		9937515B1D37598200B1182D /* TabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarView.m; sourceTree = "<group>"; };
+		993751611D375F4000B1182D /* TabBarDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarDefine.h; sourceTree = "<group>"; };
+		993751621D3761E900B1182D /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		993751641D376FC800B1182D /* APPViewControllerIntercepter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPViewControllerIntercepter.h; sourceTree = "<group>"; };
+		993751651D376FC800B1182D /* APPViewControllerIntercepter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPViewControllerIntercepter.m; sourceTree = "<group>"; };
+		9937516C1D37867B00B1182D /* PlugsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlugsManager.h; sourceTree = "<group>"; };
+		9937516D1D37867B00B1182D /* PlugsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlugsManager.m; sourceTree = "<group>"; };
+		9937516F1D37880800B1182D /* AppKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppKeys.h; sourceTree = "<group>"; };
+		993751701D37880800B1182D /* AppKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppKeys.m; sourceTree = "<group>"; };
+		993751731D378D3D00B1182D /* PushService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushService.h; sourceTree = "<group>"; };
+		993751741D378D3D00B1182D /* PushService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushService.m; sourceTree = "<group>"; };
 		99F162331D363D8E00C8B579 /* YYDApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYDApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F162371D363D8E00C8B579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		99F1623C1D363D8E00C8B579 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		99F1623D1D363D8E00C8B579 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		99F162421D363D8E00C8B579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99F162451D363D8E00C8B579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99F162471D363D8E00C8B579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,6 +212,153 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		993751331D37270200B1182D /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				993751361D372CF400B1182D /* TabBarVC.h */,
+				993751371D372CF400B1182D /* TabBarVC.m */,
+				993751391D372D3A00B1182D /* TabBarHelper.h */,
+				9937513A1D372D3A00B1182D /* TabBarHelper.m */,
+				9937515A1D37598200B1182D /* TabBarView.h */,
+				9937515B1D37598200B1182D /* TabBarView.m */,
+				993751611D375F4000B1182D /* TabBarDefine.h */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		993751341D37280C00B1182D /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		993751351D37295700B1182D /* Navgation */ = {
+			isa = PBXGroup;
+			children = (
+				9937514D1D3734BE00B1182D /* APPNavigationController.h */,
+				9937514E1D3734BE00B1182D /* APPNavigationController.m */,
+			);
+			path = Navgation;
+			sourceTree = "<group>";
+		};
+		9937513C1D37300700B1182D /* PersonInfo */ = {
+			isa = PBXGroup;
+			children = (
+				993751451D37311200B1182D /* Action */,
+				9937513D1D37300700B1182D /* APIManagers */,
+				9937513E1D37300700B1182D /* Controllers */,
+				9937513F1D37300700B1182D /* Models */,
+				993751401D37300700B1182D /* ViewModels */,
+				993751411D37300700B1182D /* Views */,
+			);
+			path = PersonInfo;
+			sourceTree = "<group>";
+		};
+		9937513D1D37300700B1182D /* APIManagers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		9937513E1D37300700B1182D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				993751421D37302100B1182D /* PersonVC.h */,
+				993751431D37302100B1182D /* PersonVC.m */,
+				993751541D373BB400B1182D /* PersonSettingVC.h */,
+				993751551D373BB400B1182D /* PersonSettingVC.m */,
+				993751571D37440E00B1182D /* AboutVC.h */,
+				993751581D37440E00B1182D /* AboutVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9937513F1D37300700B1182D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		993751401D37300700B1182D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		993751411D37300700B1182D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		993751451D37311200B1182D /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				993751461D3731C700B1182D /* TargetPersonInfo.h */,
+				993751471D3731C700B1182D /* TargetPersonInfo.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		993751491D3732A200B1182D /* PersonInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9937514A1D3732BC00B1182D /* YMMediator+PersonActions.h */,
+				9937514B1D3732BC00B1182D /* YMMediator+PersonActions.m */,
+			);
+			path = PersonInfo;
+			sourceTree = "<group>";
+		};
+		993751501D3739DB00B1182D /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				993751511D373A0E00B1182D /* UIColor+AppColor.h */,
+				993751521D373A0E00B1182D /* UIColor+AppColor.m */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		993751631D376F7E00B1182D /* Intercepter */ = {
+			isa = PBXGroup;
+			children = (
+				993751641D376FC800B1182D /* APPViewControllerIntercepter.h */,
+				993751651D376FC800B1182D /* APPViewControllerIntercepter.m */,
+			);
+			path = Intercepter;
+			sourceTree = "<group>";
+		};
+		993751681D3775C700B1182D /* Share */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		9937516B1D37865D00B1182D /* PlugManager */ = {
+			isa = PBXGroup;
+			children = (
+				9937516C1D37867B00B1182D /* PlugsManager.h */,
+				9937516D1D37867B00B1182D /* PlugsManager.m */,
+				9937516F1D37880800B1182D /* AppKeys.h */,
+				993751701D37880800B1182D /* AppKeys.m */,
+			);
+			path = PlugManager;
+			sourceTree = "<group>";
+		};
+		993751721D378D2D00B1182D /* PushService */ = {
+			isa = PBXGroup;
+			children = (
+				993751731D378D3D00B1182D /* PushService.h */,
+				993751741D378D3D00B1182D /* PushService.m */,
+			);
+			path = PushService;
+			sourceTree = "<group>";
+		};
 		99F1622A1D363D8E00C8B579 = {
 			isa = PBXGroup;
 			children = (
@@ -200,8 +388,6 @@
 				99F1626A1D363FC500C8B579 /* BusinessModules */,
 				99F1626B1D363FC500C8B579 /* FunctionModules */,
 				99F162691D363FC500C8B579 /* BaseKit */,
-				99F1623C1D363D8E00C8B579 /* ViewController.h */,
-				99F1623D1D363D8E00C8B579 /* ViewController.m */,
 				99F162421D363D8E00C8B579 /* Assets.xcassets */,
 				99F162441D363D8E00C8B579 /* LaunchScreen.storyboard */,
 				99F162471D363D8E00C8B579 /* Info.plist */,
@@ -247,6 +433,7 @@
 		99F1626A1D363FC500C8B579 /* BusinessModules */ = {
 			isa = PBXGroup;
 			children = (
+				9937513C1D37300700B1182D /* PersonInfo */,
 				99F162751D3648D800C8B579 /* Mediator */,
 			);
 			path = BusinessModules;
@@ -273,6 +460,7 @@
 		99F1626D1D363FC500C8B579 /* Configers */ = {
 			isa = PBXGroup;
 			children = (
+				993751501D3739DB00B1182D /* Colors */,
 				99F162761D364BED00C8B579 /* Macros */,
 			);
 			path = Configers;
@@ -288,6 +476,10 @@
 		99F1626F1D363FC500C8B579 /* Plugs */ = {
 			isa = PBXGroup;
 			children = (
+				993751721D378D2D00B1182D /* PushService */,
+				9937516B1D37865D00B1182D /* PlugManager */,
+				993751681D3775C700B1182D /* Share */,
+				993751631D376F7E00B1182D /* Intercepter */,
 				99F162A21D3652CA00C8B579 /* NetWorking */,
 				99F162811D364EBB00C8B579 /* TJWKWebView */,
 			);
@@ -297,6 +489,9 @@
 		99F162701D363FC500C8B579 /* MainProject */ = {
 			isa = PBXGroup;
 			children = (
+				993751351D37295700B1182D /* Navgation */,
+				993751341D37280C00B1182D /* Guide */,
+				993751331D37270200B1182D /* TabBar */,
 				99F162711D3640F200C8B579 /* AppDelegate.h */,
 				99F162721D3640F200C8B579 /* AppDelegate.m */,
 			);
@@ -306,6 +501,7 @@
 		99F162741D3648B000C8B579 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				993751621D3761E900B1182D /* UtilsMacro.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -332,6 +528,7 @@
 		99F1627C1D364DF800C8B579 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				993751491D3732A200B1182D /* PersonInfo */,
 				99F1627D1D364DF800C8B579 /* Login */,
 			);
 			path = Categories;
@@ -553,6 +750,12 @@
 				TargetAttributes = {
 					99F162321D363D8E00C8B579 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 777CEHTN68;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					99F1624B1D363D8E00C8B579 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -664,33 +867,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				993751591D37440E00B1182D /* AboutVC.m in Sources */,
+				993751751D378D3D00B1182D /* PushService.m in Sources */,
 				99F1629B1D364EBB00C8B579 /* YMWebViewNavDelegate.m in Sources */,
-				99F1623E1D363D8E00C8B579 /* ViewController.m in Sources */,
+				993751481D3731C700B1182D /* TargetPersonInfo.m in Sources */,
 				99F162991D364EBB00C8B579 /* TJWebVC.m in Sources */,
+				9937514C1D3732BC00B1182D /* YMMediator+PersonActions.m in Sources */,
 				99F162C71D3652CA00C8B579 /* APIProxy.m in Sources */,
 				99F162D01D3652CA00C8B579 /* NSURLRequest+APINetworkingMethods.m in Sources */,
 				99F162381D363D8E00C8B579 /* main.m in Sources */,
+				993751661D376FC800B1182D /* APPViewControllerIntercepter.m in Sources */,
 				99F162CA1D3652CA00C8B579 /* RequsetGenerator.m in Sources */,
 				99F162A01D364EBB00C8B579 /* WKWebViewJavascriptBridge.m in Sources */,
+				993751561D373BB400B1182D /* PersonSettingVC.m in Sources */,
 				99F162D41D3652CA00C8B579 /* YaoYDService.m in Sources */,
 				99F1629F1D364EBB00C8B579 /* WebViewJavascriptBridgeBase.m in Sources */,
+				9937513B1D372D3A00B1182D /* TabBarHelper.m in Sources */,
+				9937514F1D3734BE00B1182D /* APPNavigationController.m in Sources */,
 				99F162D31D3652CA00C8B579 /* APIServiceFactory.m in Sources */,
+				993751711D37880800B1182D /* AppKeys.m in Sources */,
 				99F162C81D3652CA00C8B579 /* APIURLResponse.m in Sources */,
 				99F162CC1D3652CA00C8B579 /* APICachedObject.m in Sources */,
+				993751441D37302100B1182D /* PersonVC.m in Sources */,
 				99F1627B1D364DBB00C8B579 /* YMMediator.m in Sources */,
 				99F162731D3640F200C8B579 /* AppDelegate.m in Sources */,
 				99F162CF1D3652CA00C8B579 /* NSObject+APINetworkingMethods.m in Sources */,
 				99F1629C1D364EBB00C8B579 /* YMWebViewUIDelegate.m in Sources */,
+				993751531D373A0E00B1182D /* UIColor+AppColor.m in Sources */,
 				99F162CB1D3652CA00C8B579 /* APICache.m in Sources */,
 				99F162A11D364EBB00C8B579 /* WebViewJSHandler.m in Sources */,
 				99F1629A1D364EBB00C8B579 /* YMWebViewHelper.m in Sources */,
 				99F162D21D3652CA00C8B579 /* APIService.m in Sources */,
+				9937516E1D37867B00B1182D /* PlugsManager.m in Sources */,
 				99F162CE1D3652CA00C8B579 /* NSDictionary+APINetworkingMethods.m in Sources */,
 				99F162801D364E1B00C8B579 /* YMMediator+LoginActions.m in Sources */,
 				99F1629D1D364EBB00C8B579 /* YMWKScriptMessageHandler.m in Sources */,
 				99F162C91D3652CA00C8B579 /* BaseAPIManager.m in Sources */,
+				9937515C1D37598200B1182D /* TabBarView.m in Sources */,
 				99F1629E1D364EBB00C8B579 /* WebViewJavascriptBridge_JS.m in Sources */,
 				99F162CD1D3652CA00C8B579 /* NSArray+APINetworkingMethods.m in Sources */,
+				993751381D372CF400B1182D /* TabBarVC.m in Sources */,
 				99F162D11D3652CA00C8B579 /* APILogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -825,9 +1041,11 @@
 			baseConfigurationReference = 62117DFC572C9E729706A0B0 /* Pods-YYDApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YYDApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ym.YYDApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1yd.testpush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -837,9 +1055,11 @@
 			baseConfigurationReference = F3FBFBD69F1995534D4AA192 /* Pods-YYDApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YYDApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ym.YYDApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1yd.testpush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

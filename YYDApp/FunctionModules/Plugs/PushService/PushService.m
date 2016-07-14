@@ -1,0 +1,68 @@
+//
+//  PushService.m
+//  YYDApp
+//
+//  Created by YM on 16/7/14.
+//  Copyright © 2016年 YM. All rights reserved.
+//
+
+#import "PushService.h"
+#import <JPUSHService.h>
+#import <UIKit/UIKit.h>
+#import "AppKeys.h"
+
+@implementation PushService
+
+
+/**
+ *  注册推送服务
+ */
++ (void)registerPushWithOptions:(NSDictionary *)launchOptions{
+    
+    [JPUSHService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
+                                                      UIUserNotificationTypeSound |
+                                                      UIUserNotificationTypeAlert)
+                                          categories:nil];
+    
+    [JPUSHService setupWithOption:launchOptions
+                           appKey:kJPushKey
+                          channel:@"APPStore"
+                 apsForProduction:kApsForProduction];
+    
+}
+
+/**
+ *  向服务端传送 deviceToken
+ *
+ *  @param deviceToken apns 返回的 deviceToken
+ */
++ (void)registerDeviceToken:(NSData *)deviceToken{
+    [JPUSHService registerDeviceToken:deviceToken];
+}
+
+
+
+/**
+ *  处理推送消息
+ *
+ *  @param userInfo 推送传递的消息
+ */
++ (void)handleRemoteNotification:(NSDictionary *)userInfo{
+    
+    
+    
+    [JPUSHService handleRemoteNotification:userInfo];
+}
+
+
++ (NSString *)registrationID{
+    return [JPUSHService registrationID];
+}
+
++ (void)removeBinding{
+    
+}
+
+
+
+@end

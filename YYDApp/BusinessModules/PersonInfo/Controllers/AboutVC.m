@@ -1,27 +1,29 @@
 //
-//  ViewController.m
+//  AboutVC.m
 //  YYDApp
 //
-//  Created by YM on 16/7/13.
+//  Created by YM on 16/7/14.
 //  Copyright © 2016年 YM. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AboutVC.h"
 
-@interface ViewController ()
+@interface AboutVC ()
 
 @end
 
-@implementation ViewController
+@implementation AboutVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor yellowColor];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
