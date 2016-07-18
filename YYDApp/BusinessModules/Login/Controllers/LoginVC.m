@@ -80,6 +80,7 @@
 
 
 - (void)prepareAction{
+    @weakify(self);
     RAC(self.loginVM,userName) = self.userNameTextField.rac_textSignal;
     RAC(self.loginVM,userPW) = self.userPWTextField.rac_textSignal;
     
@@ -95,6 +96,7 @@
   
     [[self.submitBtn rac_signalForControlEvents:(UIControlEventTouchUpInside)] subscribeNext:^(id x) {
         //转菊花
+        @strongify(self);
         [self.loginVM.loginCommand execute:@2];
     }];
     self.loginVM.loginAPIManager.delegate = self;
@@ -195,4 +197,8 @@
     return _loginVM;
 }
 
+
+- (void)dealloc{
+    
+}
 @end

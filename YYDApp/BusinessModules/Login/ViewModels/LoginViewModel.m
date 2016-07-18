@@ -9,6 +9,9 @@
 #import "LoginViewModel.h"
 
 @interface LoginViewModel ()<APIManagerParamSourceDelegate,APIManagerInterceptor>
+{
+    NSInteger lastRequestID;
+}
 @end
 
 @implementation LoginViewModel
@@ -65,8 +68,16 @@
 - (RACSignal *)loginSignal{
     
    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        [self.loginAPIManager loadData];
-        [subscriber sendCompleted];
+       
+       //cancel 最后一次的 request
+       [self.loginAPIManager cancelRequestByRequsetID:lastRequestID];
+       
+       //存储一下 最后一次的 request ID
+       lastRequestID = [self.loginAPIManager loadData];
+       
+       
+       
+       [subscriber sendCompleted];
        return nil;
     }];
 }
@@ -101,6 +112,10 @@
         _loginAPIManager.interceptor = self;
     }
     return _loginAPIManager;
+}
+
+-(void)dealloc{
+    [self.loginAPIManager cancelAllRequests];
 }
 
 @end

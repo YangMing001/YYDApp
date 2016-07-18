@@ -15,9 +15,11 @@
 - (NSString *)methodName{
     return  @"oauth/token";
 }
+
 - (NSString *)serviceType{
     return  kAPIServiceYaoYD;
 }
+
 - (APIManagerRequsetType)requestType{
     return APIManagerRequsetTypePost;
 }
