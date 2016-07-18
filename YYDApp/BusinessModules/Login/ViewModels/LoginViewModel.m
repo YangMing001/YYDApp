@@ -8,8 +8,7 @@
 
 #import "LoginViewModel.h"
 
-@interface LoginViewModel ()<APIManagerCallBackDelegate,APIManagerParamSourceDelegate>
-@property (nonatomic,strong) LoginAPIManager *loginAPIManager;
+@interface LoginViewModel ()<APIManagerParamSourceDelegate,APIManagerInterceptor>
 @end
 
 @implementation LoginViewModel
@@ -84,23 +83,22 @@
 {
    return @{@"Authorization":@"Basic MzUzYjMwMmM0NDU3NGY1NjUwNDU2ODdlNTM0ZTdkNmE6Mjg2OTI0Njk3ZTYxNWE2NzJhNjQ2YTQ5MzU0NTY0NmM="};
 }
-#pragma mark - API Call Back
-- (void)apiManagerCallBackDidSuccess:(BaseAPIManager *)manager
-{
-    
+
+#pragma mark -APIManagerInterceptor 
+- (void)manager:(BaseAPIManager *)manager beforePerformSuccessWithResponse:(APIURLResponse *)response{
+    //保存用户信息
+}
+- (void)manager:(BaseAPIManager *)manager afterPerformSuccessWithResponse:(APIURLResponse *)response{
+    //
 }
 
-- (void)apiManagerCallBackDidFailed:(BaseAPIManager *)manager
-{
-    
-}
 
 #pragma mark Getter And Setter
 - (LoginAPIManager *)loginAPIManager{
     if(!_loginAPIManager){
         _loginAPIManager = [[LoginAPIManager alloc] init];
-        _loginAPIManager.delegate = self;
         _loginAPIManager.paramSource = self;
+        _loginAPIManager.interceptor = self;
     }
     return _loginAPIManager;
 }

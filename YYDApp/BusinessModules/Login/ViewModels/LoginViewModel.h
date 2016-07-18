@@ -15,6 +15,9 @@
 @property (nonatomic,copy) NSString *userName;
 @property (nonatomic,copy) NSString *userPW;
 
+@property (nonatomic,strong) LoginAPIManager *loginAPIManager;
+
+
 #pragma mark - Siganl 信号量
 
 @property (nonatomic,strong) RACSignal *enabelLoginSignal;

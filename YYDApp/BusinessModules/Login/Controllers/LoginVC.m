@@ -12,7 +12,7 @@
 #import "LoginViewModel.h"
 #import <ReactiveCocoa.h>
 
-@interface LoginVC ()
+@interface LoginVC ()<APIManagerCallBackDelegate>
 
 @property (nonatomic,strong) UITextField *userNameTextField;
 @property (nonatomic,strong) UITextField *userPWTextField;
@@ -41,12 +41,23 @@
     self.navigationController.navigationBar.hidden = YES;
 }
 
+#pragma mark -  APIManagerInterceptor Delegate
+
+- (void)apiManagerCallBackDidFailed:(BaseAPIManager *)manager{
+    //菊花停止
+
+    //manager.errorMessage;
+}
+
+- (void)apiManagerCallBackDidSuccess:(BaseAPIManager *)manager{
+    //菊花停止
+    //
+}
+
 #pragma mark - Event
 - (void)close{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-
 
 - (void)goRge{
     [self.navigationController pushViewController:[RegiestVC new] animated:YES];
@@ -81,10 +92,12 @@
     }];
 
     RAC(self.submitBtn,enabled) = self.loginVM.enabelLoginSignal;
+  
     [[self.submitBtn rac_signalForControlEvents:(UIControlEventTouchUpInside)] subscribeNext:^(id x) {
-        NSLog(@"---");
+        //转菊花
         [self.loginVM.loginCommand execute:@2];
     }];
+    self.loginVM.loginAPIManager.delegate = self;
     
 }
 

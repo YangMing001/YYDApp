@@ -154,6 +154,7 @@
              withErrorType:(APIManagerErrorType)errorType
 {
     self.errorType = errorType;
+    self.errorMessage = response.responseString;
     [self removeRequestID:response.requestId];
     [self beforPerformFailWithResponse:response];
     [self.delegate apiManagerCallBackDidFailed:self];
