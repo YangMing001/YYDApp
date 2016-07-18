@@ -11,6 +11,8 @@
 NSString *const kMediatorTargetLogin = @"Login";
 
 NSString *const kMediatorActionNativeFetchLoginVC = @"FetchViewControllerLogin";
+NSString *const kMediatorActionNativeGoLoginVC = @"GoLogin";
+
 
 @implementation YMMediator (LoginActions)
 
@@ -26,6 +28,12 @@ NSString *const kMediatorActionNativeFetchLoginVC = @"FetchViewControllerLogin";
         //异常
         return [[UIViewController alloc] init];
     }
+}
+
+- (void)MediatorGoLogin:(NSDictionary *)callBack{
+    [self performTarget:kMediatorTargetLogin
+                 action:kMediatorActionNativeGoLoginVC
+                 params:callBack];
 }
 
 @end

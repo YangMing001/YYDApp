@@ -22,6 +22,11 @@
 		9937516E1D37867B00B1182D /* PlugsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937516D1D37867B00B1182D /* PlugsManager.m */; };
 		993751711D37880800B1182D /* AppKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751701D37880800B1182D /* AppKeys.m */; };
 		993751751D378D3D00B1182D /* PushService.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751741D378D3D00B1182D /* PushService.m */; };
+		993768301D3875C700E64B95 /* AppDelegateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937682F1D3875C700E64B95 /* AppDelegateHelper.m */; };
+		993768791D388E3000E64B95 /* TargetLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 993768781D388E3000E64B95 /* TargetLogin.m */; };
+		9937687C1D388E5200E64B95 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937687B1D388E5200E64B95 /* LoginVC.m */; };
+		9937687F1D38973400E64B95 /* RegiestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937687E1D38973400E64B95 /* RegiestVC.m */; };
+		993768821D38AFFD00E64B95 /* NavAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 993768811D38AFFD00E64B95 /* NavAnimated.m */; };
 		99F162381D363D8E00C8B579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F162371D363D8E00C8B579 /* main.m */; };
 		99F162431D363D8E00C8B579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F162421D363D8E00C8B579 /* Assets.xcassets */; };
 		99F162461D363D8E00C8B579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F162441D363D8E00C8B579 /* LaunchScreen.storyboard */; };
@@ -106,6 +111,16 @@
 		993751701D37880800B1182D /* AppKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppKeys.m; sourceTree = "<group>"; };
 		993751731D378D3D00B1182D /* PushService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushService.h; sourceTree = "<group>"; };
 		993751741D378D3D00B1182D /* PushService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushService.m; sourceTree = "<group>"; };
+		9937682E1D3875C700E64B95 /* AppDelegateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegateHelper.h; sourceTree = "<group>"; };
+		9937682F1D3875C700E64B95 /* AppDelegateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateHelper.m; sourceTree = "<group>"; };
+		993768771D388E3000E64B95 /* TargetLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetLogin.h; sourceTree = "<group>"; };
+		993768781D388E3000E64B95 /* TargetLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetLogin.m; sourceTree = "<group>"; };
+		9937687A1D388E5200E64B95 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		9937687B1D388E5200E64B95 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		9937687D1D38973400E64B95 /* RegiestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegiestVC.h; sourceTree = "<group>"; };
+		9937687E1D38973400E64B95 /* RegiestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegiestVC.m; sourceTree = "<group>"; };
+		993768801D38AFFD00E64B95 /* NavAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavAnimated.h; sourceTree = "<group>"; };
+		993768811D38AFFD00E64B95 /* NavAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavAnimated.m; sourceTree = "<group>"; };
 		99F162331D363D8E00C8B579 /* YYDApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYDApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F162371D363D8E00C8B579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99F162421D363D8E00C8B579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -238,6 +253,8 @@
 			children = (
 				9937514D1D3734BE00B1182D /* APPNavigationController.h */,
 				9937514E1D3734BE00B1182D /* APPNavigationController.m */,
+				993768801D38AFFD00E64B95 /* NavAnimated.h */,
+				993768811D38AFFD00E64B95 /* NavAnimated.m */,
 			);
 			path = Navgation;
 			sourceTree = "<group>";
@@ -359,6 +376,67 @@
 			path = PushService;
 			sourceTree = "<group>";
 		};
+		993768311D38872200E64B95 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				993768321D38872200E64B95 /* Action */,
+				993768331D38872200E64B95 /* APIManagers */,
+				993768341D38872200E64B95 /* Controllers */,
+				993768351D38872200E64B95 /* Models */,
+				993768361D38872200E64B95 /* ViewModels */,
+				993768371D38872200E64B95 /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		993768321D38872200E64B95 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				993768771D388E3000E64B95 /* TargetLogin.h */,
+				993768781D388E3000E64B95 /* TargetLogin.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		993768331D38872200E64B95 /* APIManagers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		993768341D38872200E64B95 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9937687A1D388E5200E64B95 /* LoginVC.h */,
+				9937687B1D388E5200E64B95 /* LoginVC.m */,
+				9937687D1D38973400E64B95 /* RegiestVC.h */,
+				9937687E1D38973400E64B95 /* RegiestVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		993768351D38872200E64B95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		993768361D38872200E64B95 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		993768371D38872200E64B95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		99F1622A1D363D8E00C8B579 = {
 			isa = PBXGroup;
 			children = (
@@ -433,8 +511,9 @@
 		99F1626A1D363FC500C8B579 /* BusinessModules */ = {
 			isa = PBXGroup;
 			children = (
-				9937513C1D37300700B1182D /* PersonInfo */,
 				99F162751D3648D800C8B579 /* Mediator */,
+				993768311D38872200E64B95 /* Login */,
+				9937513C1D37300700B1182D /* PersonInfo */,
 			);
 			path = BusinessModules;
 			sourceTree = "<group>";
@@ -494,6 +573,8 @@
 				993751331D37270200B1182D /* TabBar */,
 				99F162711D3640F200C8B579 /* AppDelegate.h */,
 				99F162721D3640F200C8B579 /* AppDelegate.m */,
+				9937682E1D3875C700E64B95 /* AppDelegateHelper.h */,
+				9937682F1D3875C700E64B95 /* AppDelegateHelper.m */,
 			);
 			path = MainProject;
 			sourceTree = "<group>";
@@ -873,7 +954,10 @@
 				993751481D3731C700B1182D /* TargetPersonInfo.m in Sources */,
 				99F162991D364EBB00C8B579 /* TJWebVC.m in Sources */,
 				9937514C1D3732BC00B1182D /* YMMediator+PersonActions.m in Sources */,
+				9937687C1D388E5200E64B95 /* LoginVC.m in Sources */,
 				99F162C71D3652CA00C8B579 /* APIProxy.m in Sources */,
+				9937687F1D38973400E64B95 /* RegiestVC.m in Sources */,
+				993768791D388E3000E64B95 /* TargetLogin.m in Sources */,
 				99F162D01D3652CA00C8B579 /* NSURLRequest+APINetworkingMethods.m in Sources */,
 				99F162381D363D8E00C8B579 /* main.m in Sources */,
 				993751661D376FC800B1182D /* APPViewControllerIntercepter.m in Sources */,
@@ -901,10 +985,12 @@
 				9937516E1D37867B00B1182D /* PlugsManager.m in Sources */,
 				99F162CE1D3652CA00C8B579 /* NSDictionary+APINetworkingMethods.m in Sources */,
 				99F162801D364E1B00C8B579 /* YMMediator+LoginActions.m in Sources */,
+				993768301D3875C700E64B95 /* AppDelegateHelper.m in Sources */,
 				99F1629D1D364EBB00C8B579 /* YMWKScriptMessageHandler.m in Sources */,
 				99F162C91D3652CA00C8B579 /* BaseAPIManager.m in Sources */,
 				9937515C1D37598200B1182D /* TabBarView.m in Sources */,
 				99F1629E1D364EBB00C8B579 /* WebViewJavascriptBridge_JS.m in Sources */,
+				993768821D38AFFD00E64B95 /* NavAnimated.m in Sources */,
 				99F162CD1D3652CA00C8B579 /* NSArray+APINetworkingMethods.m in Sources */,
 				993751381D372CF400B1182D /* TabBarVC.m in Sources */,
 				99F162D11D3652CA00C8B579 /* APILogger.m in Sources */,

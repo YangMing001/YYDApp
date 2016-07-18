@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TabBarVC.h"
 #import "PlugsManager.h"
+#import "AppDelegateHelper.h"
 
 @interface AppDelegate ()
 
@@ -19,10 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //step 1 设置 Window、RootViewController
+
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [self setupRootVC];
+    self.window.rootViewController = [AppDelegateHelper rootViewController];
     [self.window makeKeyAndVisible];
     
+    //step 2 注册第三方信息
     [PlugsManager registerForDidFinishLaunchingWithOptions:launchOptions];
     
     return YES;
@@ -38,10 +42,6 @@
 }
 
 #pragma mark - Private Methods
-
-- (UIViewController *)setupRootVC{
-    return [TabBarVC new];
-}
 
 
 

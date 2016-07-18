@@ -1,42 +1,33 @@
 //
-//  PersonVC.m
+//  RegiestVC.m
 //  YYDApp
 //
-//  Created by YM on 16/7/14.
+//  Created by YM on 16/7/15.
 //  Copyright © 2016年 YM. All rights reserved.
 //
 
-#import "PersonVC.h"
-#import "PersonSettingVC.h"
-#import "YMMediator+LoginActions.h"
+#import "RegiestVC.h"
 
-#import <JPUSHService.h>
-
-@interface PersonVC ()
+@interface RegiestVC ()
 
 @end
 
-@implementation PersonVC
+@implementation RegiestVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(log) name:kJPFNetworkDidLoginNotification object:nil];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
-- (void)log{
-    NSLog(@"jspush key ----> %@",[JPUSHService registrationID]);
-
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden
+    = NO;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//    PersonSettingVC *vc = [[PersonSettingVC alloc] init];
-//    [self.navigationController pushViewController:vc animated:YES];
-
-
-    [[YMMediator sharedInstance] MediatorGoLogin:nil];
-
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

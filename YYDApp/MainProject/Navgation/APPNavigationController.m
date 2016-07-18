@@ -7,11 +7,11 @@
 //
 
 #import "APPNavigationController.h"
-
+#import "NavAnimated.h"
 #import "UIColor+AppColor.h"
 
-@interface APPNavigationController ()
-
+@interface APPNavigationController ()<UINavigationControllerDelegate>
+@property (nonatomic,strong) NavAnimated *navAnimate;
 @end
 
 @implementation APPNavigationController
@@ -41,6 +41,14 @@
 }
 
 
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController{
+    if (self = [super initWithRootViewController:rootViewController]) {
+//        self.delegate = self;
+    }
+    return self;
+}
+
+
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
 
@@ -61,6 +69,39 @@
     [self popViewControllerAnimated:YES];
 }
 
+#pragma mark - Delegate
+#pragma mark - Setter And Getter
+
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
+    
+    
+    switch (operation) {
+        case  UINavigationControllerOperationPush:
+        {
+            self.navAnimate.animatedType = NavAnimatedTypePush;
+            return self.navAnimate;
+        }
+            break;
+            
+        case  UINavigationControllerOperationPop:
+        {
+            self.navAnimate.animatedType = NavAnimatedTypePop;
+            return self.navAnimate;
+        }
+            break;
+          
+        default:
+            break;
+    }
+    return nil;
+}
+
+- (NavAnimated *)navAnimate{
+    if (!_navAnimate) {
+        _navAnimate = [NavAnimated new];
+    }
+    return _navAnimate;
+}
 
 
 @end

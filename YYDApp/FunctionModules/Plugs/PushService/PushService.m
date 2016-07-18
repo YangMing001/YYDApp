@@ -37,6 +37,8 @@
  *  @param deviceToken apns 返回的 deviceToken
  */
 + (void)registerDeviceToken:(NSData *)deviceToken{
+    
+    //如果不是极光 这一步可以保存 DeviceToken ，或者上传服务器
     [JPUSHService registerDeviceToken:deviceToken];
 }
 
@@ -49,13 +51,14 @@
  */
 + (void)handleRemoteNotification:(NSDictionary *)userInfo{
     
-    
+    //处理推送消息
     
     [JPUSHService handleRemoteNotification:userInfo];
 }
 
 
 + (NSString *)registrationID{
+     //如果不是极光 这一步可以上传 DeviceToken
     return [JPUSHService registrationID];
 }
 

@@ -12,5 +12,7 @@
 
 - (UIViewController *)MediatorViewControllerForLogin;
 
+- (void)MediatorGoLogin:(NSDictionary *)callBack;
+
 
 @end
