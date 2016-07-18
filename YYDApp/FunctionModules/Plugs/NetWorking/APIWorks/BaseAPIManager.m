@@ -65,7 +65,7 @@
     NSInteger requestID = 0;
     NSDictionary *apiParams = params;
     if ([self shouldCallApiWithParams:apiParams]) {
-        if ([self.validator manager:self isCorrectWithParamsData:apiParams]) {
+        if ([self validatorCallApiWithParams:apiParams]) {
             
             //缓存
             if ([self shouldCache] && [self hasCacheParams:params]) {
@@ -188,6 +188,16 @@
 {
     if (self != self.interceptor && [self.interceptor respondsToSelector:@selector(manager:shouldCallAPIWithParams:)]) {
         return [self.interceptor manager:self shouldCallAPIWithParams:parmas];
+    }
+    return YES;
+}
+
+- (BOOL)validatorCallApiWithParams:(NSDictionary *)parmas
+{
+    
+    
+    if (self != self.validator && [self.validator respondsToSelector:@selector(manager:isCorrectWithParamsData:)]) {
+        return [self.validator manager:self isCorrectWithParamsData:parmas];
     }
     return YES;
 }

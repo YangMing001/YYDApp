@@ -27,6 +27,8 @@
 		9937687C1D388E5200E64B95 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937687B1D388E5200E64B95 /* LoginVC.m */; };
 		9937687F1D38973400E64B95 /* RegiestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937687E1D38973400E64B95 /* RegiestVC.m */; };
 		993768821D38AFFD00E64B95 /* NavAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 993768811D38AFFD00E64B95 /* NavAnimated.m */; };
+		99AA4E441D3C7DC8004FE781 /* LoginAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA4E431D3C7DC8004FE781 /* LoginAPIManager.m */; };
+		99AA4E471D3C80FD004FE781 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA4E461D3C80FD004FE781 /* LoginViewModel.m */; };
 		99F162381D363D8E00C8B579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F162371D363D8E00C8B579 /* main.m */; };
 		99F162431D363D8E00C8B579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F162421D363D8E00C8B579 /* Assets.xcassets */; };
 		99F162461D363D8E00C8B579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F162441D363D8E00C8B579 /* LaunchScreen.storyboard */; };
@@ -121,6 +123,10 @@
 		9937687E1D38973400E64B95 /* RegiestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegiestVC.m; sourceTree = "<group>"; };
 		993768801D38AFFD00E64B95 /* NavAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavAnimated.h; sourceTree = "<group>"; };
 		993768811D38AFFD00E64B95 /* NavAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavAnimated.m; sourceTree = "<group>"; };
+		99AA4E421D3C7DC8004FE781 /* LoginAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAPIManager.h; sourceTree = "<group>"; };
+		99AA4E431D3C7DC8004FE781 /* LoginAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAPIManager.m; sourceTree = "<group>"; };
+		99AA4E451D3C80FD004FE781 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		99AA4E461D3C80FD004FE781 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		99F162331D363D8E00C8B579 /* YYDApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYDApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F162371D363D8E00C8B579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99F162421D363D8E00C8B579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -401,6 +407,8 @@
 		993768331D38872200E64B95 /* APIManagers */ = {
 			isa = PBXGroup;
 			children = (
+				99AA4E421D3C7DC8004FE781 /* LoginAPIManager.h */,
+				99AA4E431D3C7DC8004FE781 /* LoginAPIManager.m */,
 			);
 			path = APIManagers;
 			sourceTree = "<group>";
@@ -426,6 +434,8 @@
 		993768361D38872200E64B95 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				99AA4E451D3C80FD004FE781 /* LoginViewModel.h */,
+				99AA4E461D3C80FD004FE781 /* LoginViewModel.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -980,6 +990,7 @@
 				993751531D373A0E00B1182D /* UIColor+AppColor.m in Sources */,
 				99F162CB1D3652CA00C8B579 /* APICache.m in Sources */,
 				99F162A11D364EBB00C8B579 /* WebViewJSHandler.m in Sources */,
+				99AA4E471D3C80FD004FE781 /* LoginViewModel.m in Sources */,
 				99F1629A1D364EBB00C8B579 /* YMWebViewHelper.m in Sources */,
 				99F162D21D3652CA00C8B579 /* APIService.m in Sources */,
 				9937516E1D37867B00B1182D /* PlugsManager.m in Sources */,
@@ -988,6 +999,7 @@
 				993768301D3875C700E64B95 /* AppDelegateHelper.m in Sources */,
 				99F1629D1D364EBB00C8B579 /* YMWKScriptMessageHandler.m in Sources */,
 				99F162C91D3652CA00C8B579 /* BaseAPIManager.m in Sources */,
+				99AA4E441D3C7DC8004FE781 /* LoginAPIManager.m in Sources */,
 				9937515C1D37598200B1182D /* TabBarView.m in Sources */,
 				99F1629E1D364EBB00C8B579 /* WebViewJavascriptBridge_JS.m in Sources */,
 				993768821D38AFFD00E64B95 /* NavAnimated.m in Sources */,

@@ -51,6 +51,13 @@
  */
 + (void)handleRemoteNotification:(NSDictionary *)userInfo{
     
+    NSString *message = [userInfo description];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:(UIAlertControllerStyleAlert)];
+    [alert addAction:[UIAlertAction actionWithTitle:@"cancel" style:(UIAlertActionStyleCancel) handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
     //处理推送消息
     
     [JPUSHService handleRemoteNotification:userInfo];

@@ -28,7 +28,10 @@ typedef NS_ENUM(NSUInteger, APIManagerErrorType) {
 };
 
 
-
+/************************************************
+ APIManagerInfo
+ API基本信息协议
+ ************************************************/
 @protocol APIManagerInfo <NSObject>
 
 @required

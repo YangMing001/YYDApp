@@ -29,6 +29,7 @@
     //step 2 注册第三方信息
     [PlugsManager registerForDidFinishLaunchingWithOptions:launchOptions];
     
+
     return YES;
 }
 
