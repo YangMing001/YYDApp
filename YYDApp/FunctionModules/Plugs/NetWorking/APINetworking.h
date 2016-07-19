@@ -15,4 +15,6 @@
 #import "BaseAPIManager.h"
 #import "APIServiceFactory.h"
 
+#import "BaseAPIManager+errDescription.h"
+
 #endif /* APINetworking_h */

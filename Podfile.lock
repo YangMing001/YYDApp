@@ -17,6 +17,7 @@ PODS:
   - Aspects (1.4.1)
   - JPush (2.1.8)
   - Masonry (1.0.1)
+  - MJRefresh (3.1.10)
   - pop (1.0.9)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -37,6 +38,7 @@ DEPENDENCIES:
   - Aspects
   - JPush
   - Masonry
+  - MJRefresh
   - pop (~> 1.0)
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 3.8)
@@ -47,11 +49,12 @@ SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   JPush: 2d1286494eae216433f6d7709b2721565b4babc9
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MJRefresh: bb72948c985914b0b5cecac573a2c69a8915fb02
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: ae262a991a1a57fd896fa7b86197162ba50437e1
+PODFILE CHECKSUM: e470e0f8911a185586ae13aa081a72962bf039fe
 
 COCOAPODS: 1.1.0.beta.1

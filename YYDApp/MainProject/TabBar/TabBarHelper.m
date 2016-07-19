@@ -11,13 +11,19 @@
 #import "YMMediator+PersonActions.h"
 #import "TabBarDefine.h"
 #import "UtilsMacro.h"
+
+#import "CityListVC.h"
 @implementation TabBarHelper
 
 + (NSArray<UIViewController *> *)defautlControllers{
     UIViewController *personVC = [[YMMediator sharedInstance] MediatorViewControllerForPersonVC];
     APPNavigationController *navPresonVC = [[APPNavigationController alloc] initWithRootViewController:personVC];
     
-    return @[navPresonVC,navPresonVC];
+    UIViewController *cityListVC = [CityListVC new];
+     APPNavigationController *navPresonVC1 = [[APPNavigationController alloc] initWithRootViewController:cityListVC];
+    
+    
+    return @[navPresonVC1,navPresonVC];
   
 }
 + (NSArray<NSDictionary *> *)tabbarNormalAndSelectedImages{

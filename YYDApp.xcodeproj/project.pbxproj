@@ -29,6 +29,9 @@
 		993768821D38AFFD00E64B95 /* NavAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 993768811D38AFFD00E64B95 /* NavAnimated.m */; };
 		99AA4E441D3C7DC8004FE781 /* LoginAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA4E431D3C7DC8004FE781 /* LoginAPIManager.m */; };
 		99AA4E471D3C80FD004FE781 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA4E461D3C80FD004FE781 /* LoginViewModel.m */; };
+		99AC44501D3DFB5A00B0D47A /* CityListReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AC444F1D3DFB5A00B0D47A /* CityListReformer.m */; };
+		99AC44561D3E071E00B0D47A /* BaseAPIManager+errDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AC44551D3E071E00B0D47A /* BaseAPIManager+errDescription.m */; };
+		99AC44591D3E07A800B0D47A /* ErrorMessageReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AC44581D3E07A800B0D47A /* ErrorMessageReformer.m */; };
 		99F162381D363D8E00C8B579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F162371D363D8E00C8B579 /* main.m */; };
 		99F162431D363D8E00C8B579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F162421D363D8E00C8B579 /* Assets.xcassets */; };
 		99F162461D363D8E00C8B579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F162441D363D8E00C8B579 /* LaunchScreen.storyboard */; };
@@ -61,6 +64,9 @@
 		99F162D21D3652CA00C8B579 /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F162C21D3652CA00C8B579 /* APIService.m */; };
 		99F162D31D3652CA00C8B579 /* APIServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F162C41D3652CA00C8B579 /* APIServiceFactory.m */; };
 		99F162D41D3652CA00C8B579 /* YaoYDService.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F162C61D3652CA00C8B579 /* YaoYDService.m */; };
+		99F257111D3CDF20002888F3 /* CityAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F257101D3CDF20002888F3 /* CityAPIManager.m */; };
+		99F257141D3CDFDC002888F3 /* CityListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F257131D3CDFDC002888F3 /* CityListVC.m */; };
+		99F2571A1D3CE2CF002888F3 /* CityListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F257191D3CE2CF002888F3 /* CityListViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +133,12 @@
 		99AA4E431D3C7DC8004FE781 /* LoginAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAPIManager.m; sourceTree = "<group>"; };
 		99AA4E451D3C80FD004FE781 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		99AA4E461D3C80FD004FE781 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		99AC444E1D3DFB5A00B0D47A /* CityListReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListReformer.h; sourceTree = "<group>"; };
+		99AC444F1D3DFB5A00B0D47A /* CityListReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListReformer.m; sourceTree = "<group>"; };
+		99AC44541D3E071E00B0D47A /* BaseAPIManager+errDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseAPIManager+errDescription.h"; sourceTree = "<group>"; };
+		99AC44551D3E071E00B0D47A /* BaseAPIManager+errDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseAPIManager+errDescription.m"; sourceTree = "<group>"; };
+		99AC44571D3E07A800B0D47A /* ErrorMessageReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorMessageReformer.h; sourceTree = "<group>"; };
+		99AC44581D3E07A800B0D47A /* ErrorMessageReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorMessageReformer.m; sourceTree = "<group>"; };
 		99F162331D363D8E00C8B579 /* YYDApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYDApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F162371D363D8E00C8B579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99F162421D363D8E00C8B579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -196,6 +208,12 @@
 		99F162C41D3652CA00C8B579 /* APIServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIServiceFactory.m; sourceTree = "<group>"; };
 		99F162C51D3652CA00C8B579 /* YaoYDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YaoYDService.h; sourceTree = "<group>"; };
 		99F162C61D3652CA00C8B579 /* YaoYDService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YaoYDService.m; sourceTree = "<group>"; };
+		99F2570F1D3CDF20002888F3 /* CityAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityAPIManager.h; sourceTree = "<group>"; };
+		99F257101D3CDF20002888F3 /* CityAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityAPIManager.m; sourceTree = "<group>"; };
+		99F257121D3CDFDC002888F3 /* CityListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListVC.h; sourceTree = "<group>"; };
+		99F257131D3CDFDC002888F3 /* CityListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListVC.m; sourceTree = "<group>"; };
+		99F257181D3CE2CF002888F3 /* CityListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListViewModel.h; sourceTree = "<group>"; };
+		99F257191D3CE2CF002888F3 /* CityListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListViewModel.m; sourceTree = "<group>"; };
 		F3FBFBD69F1995534D4AA192 /* Pods-YYDApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYDApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYDApp/Pods-YYDApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -281,6 +299,8 @@
 		9937513D1D37300700B1182D /* APIManagers */ = {
 			isa = PBXGroup;
 			children = (
+				99F2570F1D3CDF20002888F3 /* CityAPIManager.h */,
+				99F257101D3CDF20002888F3 /* CityAPIManager.m */,
 			);
 			path = APIManagers;
 			sourceTree = "<group>";
@@ -294,6 +314,8 @@
 				993751551D373BB400B1182D /* PersonSettingVC.m */,
 				993751571D37440E00B1182D /* AboutVC.h */,
 				993751581D37440E00B1182D /* AboutVC.m */,
+				99F257121D3CDFDC002888F3 /* CityListVC.h */,
+				99F257131D3CDFDC002888F3 /* CityListVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -308,6 +330,10 @@
 		993751401D37300700B1182D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				99F257181D3CE2CF002888F3 /* CityListViewModel.h */,
+				99F257191D3CE2CF002888F3 /* CityListViewModel.m */,
+				99AC444E1D3DFB5A00B0D47A /* CityListReformer.h */,
+				99AC444F1D3DFB5A00B0D47A /* CityListReformer.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -728,6 +754,8 @@
 		99F162B41D3652CA00C8B579 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				99AC44571D3E07A800B0D47A /* ErrorMessageReformer.h */,
+				99AC44581D3E07A800B0D47A /* ErrorMessageReformer.m */,
 				99F162B51D3652CA00C8B579 /* NSArray+APINetworkingMethods.h */,
 				99F162B61D3652CA00C8B579 /* NSArray+APINetworkingMethods.m */,
 				99F162B71D3652CA00C8B579 /* NSDictionary+APINetworkingMethods.h */,
@@ -736,6 +764,8 @@
 				99F162BA1D3652CA00C8B579 /* NSObject+APINetworkingMethods.m */,
 				99F162BB1D3652CA00C8B579 /* NSURLRequest+APINetworkingMethods.h */,
 				99F162BC1D3652CA00C8B579 /* NSURLRequest+APINetworkingMethods.m */,
+				99AC44541D3E071E00B0D47A /* BaseAPIManager+errDescription.h */,
+				99AC44551D3E071E00B0D47A /* BaseAPIManager+errDescription.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -959,12 +989,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				993751591D37440E00B1182D /* AboutVC.m in Sources */,
+				99F257141D3CDFDC002888F3 /* CityListVC.m in Sources */,
 				993751751D378D3D00B1182D /* PushService.m in Sources */,
 				99F1629B1D364EBB00C8B579 /* YMWebViewNavDelegate.m in Sources */,
 				993751481D3731C700B1182D /* TargetPersonInfo.m in Sources */,
 				99F162991D364EBB00C8B579 /* TJWebVC.m in Sources */,
+				99AC44561D3E071E00B0D47A /* BaseAPIManager+errDescription.m in Sources */,
 				9937514C1D3732BC00B1182D /* YMMediator+PersonActions.m in Sources */,
 				9937687C1D388E5200E64B95 /* LoginVC.m in Sources */,
+				99AC44501D3DFB5A00B0D47A /* CityListReformer.m in Sources */,
 				99F162C71D3652CA00C8B579 /* APIProxy.m in Sources */,
 				9937687F1D38973400E64B95 /* RegiestVC.m in Sources */,
 				993768791D388E3000E64B95 /* TargetLogin.m in Sources */,
@@ -976,6 +1009,7 @@
 				993751561D373BB400B1182D /* PersonSettingVC.m in Sources */,
 				99F162D41D3652CA00C8B579 /* YaoYDService.m in Sources */,
 				99F1629F1D364EBB00C8B579 /* WebViewJavascriptBridgeBase.m in Sources */,
+				99F2571A1D3CE2CF002888F3 /* CityListViewModel.m in Sources */,
 				9937513B1D372D3A00B1182D /* TabBarHelper.m in Sources */,
 				9937514F1D3734BE00B1182D /* APPNavigationController.m in Sources */,
 				99F162D31D3652CA00C8B579 /* APIServiceFactory.m in Sources */,
@@ -985,11 +1019,13 @@
 				993751441D37302100B1182D /* PersonVC.m in Sources */,
 				99F1627B1D364DBB00C8B579 /* YMMediator.m in Sources */,
 				99F162731D3640F200C8B579 /* AppDelegate.m in Sources */,
+				99AC44591D3E07A800B0D47A /* ErrorMessageReformer.m in Sources */,
 				99F162CF1D3652CA00C8B579 /* NSObject+APINetworkingMethods.m in Sources */,
 				99F1629C1D364EBB00C8B579 /* YMWebViewUIDelegate.m in Sources */,
 				993751531D373A0E00B1182D /* UIColor+AppColor.m in Sources */,
 				99F162CB1D3652CA00C8B579 /* APICache.m in Sources */,
 				99F162A11D364EBB00C8B579 /* WebViewJSHandler.m in Sources */,
+				99F257111D3CDF20002888F3 /* CityAPIManager.m in Sources */,
 				99AA4E471D3C80FD004FE781 /* LoginViewModel.m in Sources */,
 				99F1629A1D364EBB00C8B579 /* YMWebViewHelper.m in Sources */,
 				99F162D21D3652CA00C8B579 /* APIService.m in Sources */,

@@ -16,6 +16,7 @@
 @property (nonatomic, copy, readwrite) NSString *responseString;
 @property (nonatomic, copy, readwrite) NSURLResponse *response;
 @property (nonatomic, assign, readwrite) BOOL isCache;
+@property (nonatomic, copy, readwrite) id content;
 
 @end
 
@@ -30,6 +31,7 @@
 {
     if (self = [super init]) {
         self.responseString = responseString;
+        self.content = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:NULL];
         self.request = request;
         self.requestId = requestID;
         self.responseData = responseData;
@@ -54,6 +56,11 @@
         self.status = [self responseStatusWithError:error];
         self.isCache = NO;
         self.requestParams = request.requestParams;
+        if (responseData) {
+            self.content = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:NULL];
+        } else {
+            self.content = nil;
+        }
     }
     return self;
 }
@@ -66,6 +73,7 @@
         self.requestId = 0;
         self.request = nil;
         self.responseData = [data copy];
+         self.content = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
         self.isCache = YES;
  
     }

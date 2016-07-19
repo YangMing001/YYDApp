@@ -113,11 +113,35 @@
     [[APIProxy shareInstance] cancelRequestByRequestID:requestID];
 }
 
+
+//如果需要在调用API之前额外添加一些参数，比如pageNumber和pageSize之类的就在这里添加
+//子类中覆盖这个函数的时候就不需要调用[super reformParams:params]了
+- (NSDictionary *)reformParams:(NSDictionary *)params
+{
+    IMP childIMP = [self.child methodForSelector:@selector(reformParams:)];
+    IMP selfIMP = [self methodForSelector:@selector(reformParams:)];
+    
+    if (childIMP == selfIMP) {
+        return params;
+    } else {
+        // 如果child是继承得来的，那么这里就不会跑到，会直接跑子类中的IMP。
+        // 如果child是另一个对象，就会跑到这里
+        NSDictionary *result = nil;
+        result = [self.child reformParams:params];
+        if (result) {
+            return result;
+        } else {
+            return params;
+        }
+    }
+}
+
+
 - (BOOL)shouldCache{
     return YES;
 }
 
-- (id)fetchDateWithReformer:(id<APIManagerCallBackDateReformer>)reformer{
+- (id)fetchDataWithReformer:(id<APIManagerCallBackDateReformer>)reformer{
     id resultData = nil;
     if ([reformer respondsToSelector:@selector(manager:reformData:)]) {
         resultData = [reformer manager:self reformData:self.fetchedRawData];
@@ -132,9 +156,19 @@
 
 - (void)successOnCallingAPI:(APIURLResponse *)response
 {
-    self.fetchedRawData = response.responseData;
+    
+    if (response.content) {
+        self.fetchedRawData = [response.content copy];
+ 
+    }else{
+        self.fetchedRawData = [response.responseData copy];
+    }
+    
+    
+    
+    
     [self removeRequestID:response.requestId];
-    if ([self.validator manager:self isCorrectWithCallBackData:response.responseString]) {
+    if ([self validatorCallApiWithCallBackData:[NSJSONSerialization JSONObjectWithData:response.responseData options:(NSJSONReadingAllowFragments) error:nil]]) {
         
         if ([self shouldCache] && !response.isCache) {
             // 缓存 。。。。。。。。
@@ -154,7 +188,6 @@
              withErrorType:(APIManagerErrorType)errorType
 {
     self.errorType = errorType;
-    self.errorMessage = response.responseString;
     [self removeRequestID:response.requestId];
     [self beforPerformFailWithResponse:response];
     [self.delegate apiManagerCallBackDidFailed:self];
@@ -193,12 +226,23 @@
     return YES;
 }
 
-- (BOOL)validatorCallApiWithParams:(NSDictionary *)parmas
+- (BOOL)validatorCallApiWithParams:(NSDictionary *)responseString
 {
     
     
     if (self != self.validator && [self.validator respondsToSelector:@selector(manager:isCorrectWithParamsData:)]) {
-        return [self.validator manager:self isCorrectWithParamsData:parmas];
+        return [self.validator manager:self isCorrectWithParamsData:responseString];
+    }
+    return YES;
+}
+
+
+- (BOOL)validatorCallApiWithCallBackData:(id)callBackData
+{
+    
+    
+    if (self != self.validator && [self.validator respondsToSelector:@selector(manager:isCorrectWithCallBackData:)]) {
+        return [self.validator manager:self isCorrectWithCallBackData:callBackData];
     }
     return YES;
 }

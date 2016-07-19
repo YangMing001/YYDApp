@@ -13,4 +13,5 @@ pod 'pop', '~> 1.0'
 pod 'YYKit'
 pod 'Aspects'
 pod 'JPush'
+pod 'MJRefresh'
 end

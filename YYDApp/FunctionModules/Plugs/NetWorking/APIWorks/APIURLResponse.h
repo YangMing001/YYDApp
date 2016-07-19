@@ -19,6 +19,9 @@ typedef NS_ENUM(NSUInteger, APIResponseStatus) {
 
 @property (nonatomic, assign, readonly) NSInteger requestId;
 @property (nonatomic, copy, readonly) NSURLRequest *request;
+
+@property (nonatomic, copy, readonly) id content;
+
 @property (nonatomic, copy, readonly) NSString *responseString;
 @property (nonatomic, copy, readonly) NSURLResponse *response;
 @property (nonatomic, copy, readonly) NSData *responseData;

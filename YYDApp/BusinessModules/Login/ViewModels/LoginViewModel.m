@@ -8,7 +8,7 @@
 
 #import "LoginViewModel.h"
 
-@interface LoginViewModel ()<APIManagerParamSourceDelegate,APIManagerInterceptor>
+@interface LoginViewModel ()<APIManagerParamSourceDelegate,APIManagerInterceptor,APIManagerValidator>
 {
     NSInteger lastRequestID;
 }
@@ -103,6 +103,15 @@
     //
 }
 
+- (BOOL)manager:(BaseAPIManager *)manager isCorrectWithCallBackData:(id)data{
+    return ((NSDictionary *)data)[@"access_token"];
+}
+- (BOOL)manager:(BaseAPIManager *)manager isCorrectWithParamsData:(NSDictionary *)data{
+    return YES;
+}
+
+
+
 
 #pragma mark Getter And Setter
 - (LoginAPIManager *)loginAPIManager{
@@ -110,6 +119,7 @@
         _loginAPIManager = [[LoginAPIManager alloc] init];
         _loginAPIManager.paramSource = self;
         _loginAPIManager.interceptor = self;
+        _loginAPIManager.validator = self;
     }
     return _loginAPIManager;
 }

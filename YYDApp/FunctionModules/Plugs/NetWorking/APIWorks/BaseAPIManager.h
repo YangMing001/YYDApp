@@ -38,8 +38,11 @@ typedef NS_ENUM(NSUInteger, APIManagerErrorType) {
 - (NSString *)methodName;
 - (NSString *)serviceType;
 - (APIManagerRequsetType)requestType;
-
+- (BOOL)shouldCache;
 @optional
+
+- (NSDictionary *)reformParams:(NSDictionary *)params;
+- (NSInteger)loadDataWithParams:(NSDictionary *)params;
 
 @end
 
@@ -139,6 +142,8 @@ typedef NS_ENUM(NSUInteger, APIManagerErrorType) {
 
 @property (nonatomic,assign,readonly) BOOL isReachable;
 @property (nonatomic,assign,readonly) BOOL isLoading;
+
+- (id)fetchDataWithReformer:(id<APIManagerCallBackDateReformer>) reformer;
 
 - (NSInteger)loadData;
 

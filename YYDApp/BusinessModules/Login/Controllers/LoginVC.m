@@ -11,6 +11,7 @@
 #import <Masonry.h>
 #import "LoginViewModel.h"
 #import <ReactiveCocoa.h>
+#import "APINetworking.h"
 
 @interface LoginVC ()<APIManagerCallBackDelegate>
 
@@ -46,7 +47,8 @@
 - (void)apiManagerCallBackDidFailed:(BaseAPIManager *)manager{
     //菊花停止
 
-    //manager.errorMessage;
+    NSLog(@"%@",[manager errDescription]);
+    
 }
 
 - (void)apiManagerCallBackDidSuccess:(BaseAPIManager *)manager{
