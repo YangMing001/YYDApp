@@ -14,8 +14,13 @@
 
     NSString *tempErrMessage = @"服务器异常";
     NSString *errorMessage = tempErrMessage;
-    if (data) {
-        errorMessage = data[@"error_description"]?:tempErrMessage;
+    if (data && [data isKindOfClass:[NSDictionary class]]) {
+        @try {
+            errorMessage = data[@"error_description"]?:tempErrMessage;
+
+        } @catch (NSException *exception) {
+            
+        }
     }
     return errorMessage;
 }

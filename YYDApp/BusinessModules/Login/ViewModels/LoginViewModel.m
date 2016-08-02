@@ -46,8 +46,8 @@
     
     self.loginCommand = [[RACCommand alloc] initWithEnabled:self.enabelLoginSignal signalBlock:^RACSignal *(id input) {
         @strongify(self);
-        return [self loginSignal];
-    }];
+        return  [self loginSignal]  ;
+    }] ;
 }
 
 #pragma mark - Private
@@ -80,6 +80,14 @@
        [subscriber sendCompleted];
        return nil;
     }];
+}
+
+- (RACSignal *)ccSignal{
+
+    
+    return [self rac_signalForSelector:@selector(manager:afterPerformFailWithResponse:) fromProtocol:@protocol(APIManagerInterceptor)]  ;
+    
+
 }
 
 #pragma mark - Params Delegate

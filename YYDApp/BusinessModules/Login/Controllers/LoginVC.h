@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
+#define kAPIDoSomeThine(info,uid)  ([NSString stringWithFormat:@"%@%@",info,uid])
+
+
 @interface LoginVC : UIViewController
 
 @end

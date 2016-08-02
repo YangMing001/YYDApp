@@ -19,7 +19,6 @@
     
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nav animated:YES completion:nil];
     return nil;
-    
 }
 
 @end

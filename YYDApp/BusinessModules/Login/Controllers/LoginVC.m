@@ -7,11 +7,13 @@
 //
 
 #import "LoginVC.h"
-#import "RegiestVC.h"
+#import "RegisterVC.h"
 #import <Masonry.h>
 #import "LoginViewModel.h"
 #import <ReactiveCocoa.h>
 #import "APINetworking.h"
+
+#import "UIViewController+YMHUD.h"
 
 @interface LoginVC ()<APIManagerCallBackDelegate>
 
@@ -34,7 +36,7 @@
     [self prepareUI];
     [self prepareAction];
     [self layoutUI];
-
+    NSLog(@"%@,",kAPIDoSomeThine(@"ccc",@"dd"));
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -46,6 +48,7 @@
 
 - (void)apiManagerCallBackDidFailed:(BaseAPIManager *)manager{
     //菊花停止
+    [self hideHUD];
 
     NSLog(@"%@",[manager errDescription]);
     
@@ -54,6 +57,8 @@
 - (void)apiManagerCallBackDidSuccess:(BaseAPIManager *)manager{
     //菊花停止
     //
+    
+    [self hideHUD];
 }
 
 #pragma mark - Event
@@ -62,7 +67,11 @@
 }
 
 - (void)goRge{
-    [self.navigationController pushViewController:[RegiestVC new] animated:YES];
+    
+    RegisterVC *regiestVC = [RegisterVC new];
+    regiestVC.fromType = FromTypeLogin;
+    
+    [self.navigationController pushViewController:regiestVC animated:YES];
 }
 
 #pragma mark - Private Method
@@ -98,8 +107,9 @@
   
     [[self.submitBtn rac_signalForControlEvents:(UIControlEventTouchUpInside)] subscribeNext:^(id x) {
         //转菊花
+        [self showHUD];
         @strongify(self);
-        [self.loginVM.loginCommand execute:@2];
+        [self.loginVM.loginCommand execute:@1];
     }];
     self.loginVM.loginAPIManager.delegate = self;
     

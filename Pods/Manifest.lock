@@ -17,7 +17,8 @@ PODS:
   - Aspects (1.4.1)
   - JPush (2.1.8)
   - Masonry (1.0.1)
-  - MJRefresh (3.1.10)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
   - pop (1.0.9)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -38,6 +39,7 @@ DEPENDENCIES:
   - Aspects
   - JPush
   - Masonry
+  - MBProgressHUD (~> 1.0.0)
   - MJRefresh
   - pop (~> 1.0)
   - ReactiveCocoa (~> 2.5)
@@ -49,12 +51,13 @@ SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   JPush: 2d1286494eae216433f6d7709b2721565b4babc9
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
-  MJRefresh: bb72948c985914b0b5cecac573a2c69a8915fb02
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: e470e0f8911a185586ae13aa081a72962bf039fe
+PODFILE CHECKSUM: 359901067000eb36e4bed45f07474359b872395c
 
 COCOAPODS: 1.1.0.beta.1

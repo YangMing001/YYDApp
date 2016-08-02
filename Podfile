@@ -14,4 +14,7 @@ pod 'YYKit'
 pod 'Aspects'
 pod 'JPush'
 pod 'MJRefresh'
+pod 'MBProgressHUD', '~> 1.0.0'
+
+
 end

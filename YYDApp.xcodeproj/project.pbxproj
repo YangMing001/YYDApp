@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		717A50FD6930EE8C5E24D37F /* libPods-YYDApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C6AA1D331AB385DA9D4ACD /* libPods-YYDApp.a */; };
+		991CB7421D50434B00AA757F /* TokenAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 991CB7411D50434B00AA757F /* TokenAPIManager.m */; };
+		991CB7451D50437200AA757F /* GetUserAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 991CB7441D50437200AA757F /* GetUserAPIManager.m */; };
+		991CB7481D5044DD00AA757F /* CreateUserAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 991CB7471D5044DD00AA757F /* CreateUserAPIManager.m */; };
+		991CB74B1D50472700AA757F /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 991CB74A1D50472700AA757F /* RegisterVC.m */; };
+		991CB74E1D50483900AA757F /* RegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 991CB74D1D50483900AA757F /* RegisterViewModel.m */; };
 		993751381D372CF400B1182D /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751371D372CF400B1182D /* TabBarVC.m */; };
 		9937513B1D372D3A00B1182D /* TabBarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937513A1D372D3A00B1182D /* TabBarHelper.m */; };
 		993751441D37302100B1182D /* PersonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 993751431D37302100B1182D /* PersonVC.m */; };
@@ -25,13 +30,16 @@
 		993768301D3875C700E64B95 /* AppDelegateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937682F1D3875C700E64B95 /* AppDelegateHelper.m */; };
 		993768791D388E3000E64B95 /* TargetLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 993768781D388E3000E64B95 /* TargetLogin.m */; };
 		9937687C1D388E5200E64B95 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937687B1D388E5200E64B95 /* LoginVC.m */; };
-		9937687F1D38973400E64B95 /* RegiestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937687E1D38973400E64B95 /* RegiestVC.m */; };
 		993768821D38AFFD00E64B95 /* NavAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 993768811D38AFFD00E64B95 /* NavAnimated.m */; };
 		99AA4E441D3C7DC8004FE781 /* LoginAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA4E431D3C7DC8004FE781 /* LoginAPIManager.m */; };
 		99AA4E471D3C80FD004FE781 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA4E461D3C80FD004FE781 /* LoginViewModel.m */; };
 		99AC44501D3DFB5A00B0D47A /* CityListReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AC444F1D3DFB5A00B0D47A /* CityListReformer.m */; };
 		99AC44561D3E071E00B0D47A /* BaseAPIManager+errDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AC44551D3E071E00B0D47A /* BaseAPIManager+errDescription.m */; };
 		99AC44591D3E07A800B0D47A /* ErrorMessageReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AC44581D3E07A800B0D47A /* ErrorMessageReformer.m */; };
+		99AD1B1B1D4F20210087C680 /* UIViewController+YMHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AD1B1A1D4F20210087C680 /* UIViewController+YMHUD.m */; };
+		99AD1B211D4F409A0087C680 /* CutDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AD1B201D4F409A0087C680 /* CutDownButton.m */; };
+		99AD1B241D4F62440087C680 /* SendMsgApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AD1B231D4F62440087C680 /* SendMsgApiManager.m */; };
+		99AD1B271D4F63160087C680 /* CheckMobileApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AD1B261D4F63160087C680 /* CheckMobileApiManager.m */; };
 		99F162381D363D8E00C8B579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F162371D363D8E00C8B579 /* main.m */; };
 		99F162431D363D8E00C8B579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F162421D363D8E00C8B579 /* Assets.xcassets */; };
 		99F162461D363D8E00C8B579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F162441D363D8E00C8B579 /* LaunchScreen.storyboard */; };
@@ -89,6 +97,16 @@
 /* Begin PBXFileReference section */
 		57C6AA1D331AB385DA9D4ACD /* libPods-YYDApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YYDApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62117DFC572C9E729706A0B0 /* Pods-YYDApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYDApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYDApp/Pods-YYDApp.debug.xcconfig"; sourceTree = "<group>"; };
+		991CB7401D50434B00AA757F /* TokenAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenAPIManager.h; sourceTree = "<group>"; };
+		991CB7411D50434B00AA757F /* TokenAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenAPIManager.m; sourceTree = "<group>"; };
+		991CB7431D50437200AA757F /* GetUserAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUserAPIManager.h; sourceTree = "<group>"; };
+		991CB7441D50437200AA757F /* GetUserAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUserAPIManager.m; sourceTree = "<group>"; };
+		991CB7461D5044DD00AA757F /* CreateUserAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateUserAPIManager.h; sourceTree = "<group>"; };
+		991CB7471D5044DD00AA757F /* CreateUserAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateUserAPIManager.m; sourceTree = "<group>"; };
+		991CB7491D50472700AA757F /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
+		991CB74A1D50472700AA757F /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
+		991CB74C1D50483900AA757F /* RegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewModel.h; sourceTree = "<group>"; };
+		991CB74D1D50483900AA757F /* RegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewModel.m; sourceTree = "<group>"; };
 		993751361D372CF400B1182D /* TabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVC.h; sourceTree = "<group>"; };
 		993751371D372CF400B1182D /* TabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
 		993751391D372D3A00B1182D /* TabBarHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarHelper.h; sourceTree = "<group>"; };
@@ -125,8 +143,6 @@
 		993768781D388E3000E64B95 /* TargetLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetLogin.m; sourceTree = "<group>"; };
 		9937687A1D388E5200E64B95 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		9937687B1D388E5200E64B95 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
-		9937687D1D38973400E64B95 /* RegiestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegiestVC.h; sourceTree = "<group>"; };
-		9937687E1D38973400E64B95 /* RegiestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegiestVC.m; sourceTree = "<group>"; };
 		993768801D38AFFD00E64B95 /* NavAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavAnimated.h; sourceTree = "<group>"; };
 		993768811D38AFFD00E64B95 /* NavAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavAnimated.m; sourceTree = "<group>"; };
 		99AA4E421D3C7DC8004FE781 /* LoginAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAPIManager.h; sourceTree = "<group>"; };
@@ -139,6 +155,14 @@
 		99AC44551D3E071E00B0D47A /* BaseAPIManager+errDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseAPIManager+errDescription.m"; sourceTree = "<group>"; };
 		99AC44571D3E07A800B0D47A /* ErrorMessageReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorMessageReformer.h; sourceTree = "<group>"; };
 		99AC44581D3E07A800B0D47A /* ErrorMessageReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorMessageReformer.m; sourceTree = "<group>"; };
+		99AD1B191D4F20210087C680 /* UIViewController+YMHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YMHUD.h"; sourceTree = "<group>"; };
+		99AD1B1A1D4F20210087C680 /* UIViewController+YMHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YMHUD.m"; sourceTree = "<group>"; };
+		99AD1B1F1D4F409A0087C680 /* CutDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutDownButton.h; sourceTree = "<group>"; };
+		99AD1B201D4F409A0087C680 /* CutDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CutDownButton.m; sourceTree = "<group>"; };
+		99AD1B221D4F62440087C680 /* SendMsgApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMsgApiManager.h; sourceTree = "<group>"; };
+		99AD1B231D4F62440087C680 /* SendMsgApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMsgApiManager.m; sourceTree = "<group>"; };
+		99AD1B251D4F63160087C680 /* CheckMobileApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckMobileApiManager.h; sourceTree = "<group>"; };
+		99AD1B261D4F63160087C680 /* CheckMobileApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckMobileApiManager.m; sourceTree = "<group>"; };
 		99F162331D363D8E00C8B579 /* YYDApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYDApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F162371D363D8E00C8B579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99F162421D363D8E00C8B579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -435,6 +459,16 @@
 			children = (
 				99AA4E421D3C7DC8004FE781 /* LoginAPIManager.h */,
 				99AA4E431D3C7DC8004FE781 /* LoginAPIManager.m */,
+				99AD1B221D4F62440087C680 /* SendMsgApiManager.h */,
+				99AD1B231D4F62440087C680 /* SendMsgApiManager.m */,
+				99AD1B251D4F63160087C680 /* CheckMobileApiManager.h */,
+				99AD1B261D4F63160087C680 /* CheckMobileApiManager.m */,
+				991CB7401D50434B00AA757F /* TokenAPIManager.h */,
+				991CB7411D50434B00AA757F /* TokenAPIManager.m */,
+				991CB7431D50437200AA757F /* GetUserAPIManager.h */,
+				991CB7441D50437200AA757F /* GetUserAPIManager.m */,
+				991CB7461D5044DD00AA757F /* CreateUserAPIManager.h */,
+				991CB7471D5044DD00AA757F /* CreateUserAPIManager.m */,
 			);
 			path = APIManagers;
 			sourceTree = "<group>";
@@ -444,8 +478,8 @@
 			children = (
 				9937687A1D388E5200E64B95 /* LoginVC.h */,
 				9937687B1D388E5200E64B95 /* LoginVC.m */,
-				9937687D1D38973400E64B95 /* RegiestVC.h */,
-				9937687E1D38973400E64B95 /* RegiestVC.m */,
+				991CB7491D50472700AA757F /* RegisterVC.h */,
+				991CB74A1D50472700AA757F /* RegisterVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -462,6 +496,8 @@
 			children = (
 				99AA4E451D3C80FD004FE781 /* LoginViewModel.h */,
 				99AA4E461D3C80FD004FE781 /* LoginViewModel.m */,
+				991CB74C1D50483900AA757F /* RegisterViewModel.h */,
+				991CB74D1D50483900AA757F /* RegisterViewModel.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -469,8 +505,19 @@
 		993768371D38872200E64B95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				99AD1B1F1D4F409A0087C680 /* CutDownButton.h */,
+				99AD1B201D4F409A0087C680 /* CutDownButton.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		99AD1B181D4F20010087C680 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				99AD1B191D4F20210087C680 /* UIViewController+YMHUD.h */,
+				99AD1B1A1D4F20210087C680 /* UIViewController+YMHUD.m */,
+			);
+			path = HUD;
 			sourceTree = "<group>";
 		};
 		99F1622A1D363D8E00C8B579 = {
@@ -591,6 +638,7 @@
 		99F1626F1D363FC500C8B579 /* Plugs */ = {
 			isa = PBXGroup;
 			children = (
+				99AD1B181D4F20010087C680 /* HUD */,
 				993751721D378D2D00B1182D /* PushService */,
 				9937516B1D37865D00B1182D /* PlugManager */,
 				993751681D3775C700B1182D /* Share */,
@@ -990,19 +1038,23 @@
 			files = (
 				993751591D37440E00B1182D /* AboutVC.m in Sources */,
 				99F257141D3CDFDC002888F3 /* CityListVC.m in Sources */,
+				991CB7451D50437200AA757F /* GetUserAPIManager.m in Sources */,
 				993751751D378D3D00B1182D /* PushService.m in Sources */,
 				99F1629B1D364EBB00C8B579 /* YMWebViewNavDelegate.m in Sources */,
 				993751481D3731C700B1182D /* TargetPersonInfo.m in Sources */,
+				991CB74E1D50483900AA757F /* RegisterViewModel.m in Sources */,
 				99F162991D364EBB00C8B579 /* TJWebVC.m in Sources */,
+				991CB7421D50434B00AA757F /* TokenAPIManager.m in Sources */,
 				99AC44561D3E071E00B0D47A /* BaseAPIManager+errDescription.m in Sources */,
 				9937514C1D3732BC00B1182D /* YMMediator+PersonActions.m in Sources */,
 				9937687C1D388E5200E64B95 /* LoginVC.m in Sources */,
 				99AC44501D3DFB5A00B0D47A /* CityListReformer.m in Sources */,
+				99AD1B211D4F409A0087C680 /* CutDownButton.m in Sources */,
 				99F162C71D3652CA00C8B579 /* APIProxy.m in Sources */,
-				9937687F1D38973400E64B95 /* RegiestVC.m in Sources */,
 				993768791D388E3000E64B95 /* TargetLogin.m in Sources */,
 				99F162D01D3652CA00C8B579 /* NSURLRequest+APINetworkingMethods.m in Sources */,
 				99F162381D363D8E00C8B579 /* main.m in Sources */,
+				99AD1B241D4F62440087C680 /* SendMsgApiManager.m in Sources */,
 				993751661D376FC800B1182D /* APPViewControllerIntercepter.m in Sources */,
 				99F162CA1D3652CA00C8B579 /* RequsetGenerator.m in Sources */,
 				99F162A01D364EBB00C8B579 /* WKWebViewJavascriptBridge.m in Sources */,
@@ -1031,7 +1083,10 @@
 				99F162D21D3652CA00C8B579 /* APIService.m in Sources */,
 				9937516E1D37867B00B1182D /* PlugsManager.m in Sources */,
 				99F162CE1D3652CA00C8B579 /* NSDictionary+APINetworkingMethods.m in Sources */,
+				99AD1B1B1D4F20210087C680 /* UIViewController+YMHUD.m in Sources */,
 				99F162801D364E1B00C8B579 /* YMMediator+LoginActions.m in Sources */,
+				99AD1B271D4F63160087C680 /* CheckMobileApiManager.m in Sources */,
+				991CB74B1D50472700AA757F /* RegisterVC.m in Sources */,
 				993768301D3875C700E64B95 /* AppDelegateHelper.m in Sources */,
 				99F1629D1D364EBB00C8B579 /* YMWKScriptMessageHandler.m in Sources */,
 				99F162C91D3652CA00C8B579 /* BaseAPIManager.m in Sources */,
@@ -1042,6 +1097,7 @@
 				99F162CD1D3652CA00C8B579 /* NSArray+APINetworkingMethods.m in Sources */,
 				993751381D372CF400B1182D /* TabBarVC.m in Sources */,
 				99F162D11D3652CA00C8B579 /* APILogger.m in Sources */,
+				991CB7481D5044DD00AA757F /* CreateUserAPIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
